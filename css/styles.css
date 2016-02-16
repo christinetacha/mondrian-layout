@@ -20,50 +20,47 @@ body {
   /*background-color: red;*/
 }
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
-}
+}*/
 
 .columns {
   min-height: 100px;
 }
 
 #bigBox1 {
-  min-width: 500px;
-  min-height: 500px;
+  width: 60%;
+  height: 60vh;
   background-color: #668cff;
   float: left;
 }
 
 #smallBox1 {
-  min-width: 250px;
-  min-height: 250px;
+  width: 39%;
+  height: 30vh;
   background-color: grey;
   float: right;
 }
 
 #smallBox2 {
-  min-width: 250px;
-  min-height: 250px;
+  width: 39%;
+  height: 30vh;
   background-color: pink;
   float: right;
 }
 
-@media only screen and (min-width: 1300px){
-  .boxes {
-    padding: 10px;
-  }
+@media only screen and (max-width: 400px) {
   #bigBox1 {
-    max-width: 800px;
-    max-height: 500px;
+    max-width: 80%;
+    max-height: 60vh;
   }
   #smallBox1 {
-    max-width: 500px;
-    max-height: 250px;
+    max-width: 80%;
+    max-height: 40vh;
   }
   #smallBox2 {
-    max-width: 500px;
-    max-height: 250px;
+    max-width: 80%;
+    max-height: 40vh;
   }
 }
