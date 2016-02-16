@@ -50,6 +50,24 @@ body {
   float: right;
 }
 
+@media only screen and (max-width: 900px) {
+  #bigBox1 {
+    width: 100%;
+    float: none;
+    margin: 10px;
+  }
+  #smallBox1 {
+    width: 47%;
+    float: left;
+    margin: 10px;
+  }
+  #smallBox2 {
+    width: 47%;
+    float: right;
+    margin: 10px;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #bigBox1 {
     width: 100%;
