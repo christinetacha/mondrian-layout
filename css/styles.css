@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  /*background-color: red;*/
+}
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+#bigBox1 {
+  min-width: 500px;
+  min-height: 500px;
+  background-color: #668cff;
+  float: left;
+}
+
+#smallBox1 {
+  min-width: 250px;
+  min-height: 250px;
+  background-color: grey;
+  float: right;
+}
+
+#smallBox2 {
+  min-width: 250px;
+  min-height: 250px;
+  background-color: pink;
+  float: right;
+}
+
+@media only screen and (min-width: 1300px){
+  .boxes {
+    padding: 10px;
+  }
+  #bigBox1 {
+    max-width: 800px;
+    max-height: 500px;
+  }
+  #smallBox1 {
+    max-width: 500px;
+    max-height: 250px;
+  }
+  #smallBox2 {
+    max-width: 500px;
+    max-height: 250px;
+  }
+}
