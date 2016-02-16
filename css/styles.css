@@ -50,20 +50,23 @@ body {
   float: right;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   #bigBox1 {
     width: 100%;
     max-height: 59%;
     float: none;
+    margin: 10px;
   }
   #smallBox1 {
     width: 100%;
     max-height: 40vh;
     float: none;
+    margin: 10px;
   }
   #smallBox2 {
     width: 100%;
     max-height: 40vh;
     float: none;
+    margin: 10px;
   }
 }
